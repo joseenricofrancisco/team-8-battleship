@@ -4,7 +4,7 @@
 - CPSC233 T02-TEAM8
 - Project Name: **Battleship**
 - Project Description：
-   The game that we are planning on making is based on a famous guessing game that was published by various companies as a pad-and-pencil game in the 1930s.  The computer will ramdomly place 5 of the players' ships on a 10 by 10 grid. The locations of the ships are unknown for the other player. Players make their guess by turn and try to "shots" at the other player's ships, the objective of the game is to destroy all the opposing player's ships. 
+  The game that we are planning on making is based on a famous guessing game that was published by various companies as a pad-and-pencil game in the 1930s.  The computer will ramdomly place 5 of the players' ships on a 10 by 10 grid. The locations of the ships are unknown for the other player. Players make their guess by turn and try to "shots" at the other player's ships, the objective of the game is to destroy all the opposing player's ships. 
 
 ***
 There is one version now: text-version.
