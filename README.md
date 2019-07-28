@@ -37,29 +37,29 @@ Text-version and GUI-verision are compressed as "Demo2.zip" in this git.
 
     5. Use command "java Main" to run the game.
 
-## How to run unit test:
+## How to run JUnit test:
 
-In "Demo2" folder, there is a folder named "testFile"
+In "Source" folder, there is a folder named "Testfile"
 
-The folder contains 3 files:
+
+The folder contains 4 files:
 - BoardTest.java
+- Board.java
 - hamcrest-core-1.3.jar
 - junit-4.12.jar
 
+    1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship
 
+    2. Locate your position into "Testfile" folder in your command terminal.
 
-To begin the unit tests for this application, copy all of the 3 files and paste it into "Dem2" folder (One upper level from "testFile" folder). Then,
-
-1. Locate your position into "Demo2" folder in your terminal.
-
-2. Copy and paste this command into your terminal and hit enter to compile.
+    3. Copy and paste this command into your terminal and hit enter to compile.
 
     javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *.java
 
-3. Copy and paste this command into your terminal and hit enter to run tests.
+    4. Copy and paste this command into your terminal and hit enter to run tests.
 
     java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BoardTest
-
+    
 ## Addtional resoures
 - Here's a sample Battleship board.
 ![Battleship board](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Battleship_game_board.svg/1280px-Battleship_game_board.svg.png)
