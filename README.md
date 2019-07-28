@@ -13,7 +13,7 @@ Text-version and GUI-verision are compressed as "Demo2.zip" in this git.
 
 
 
-## How to start text-version and GUI:
+## How to start text-version:
     
     1. Download the file "Demo2.zip" in https://github.com/joseenricofrancisco/team-8-battleship
 
@@ -50,13 +50,13 @@ The folder contains 3 files:
 
 To begin the unit tests for this application, copy all of the 3 files and paste it into "Dem2" folder (One upper level from "testFile" folder). Then,
 
-1) Locate your position into "Demo2" folder in your terminal.
+1. Locate your position into "Demo2" folder in your terminal.
 
-2) Copy and paste this command into your terminal and hit enter to compile.
+2. Copy and paste this command into your terminal and hit enter to compile.
 
     javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *.java
 
-3) Copy and paste this command into your terminal and hit enter to run tests.
+3. Copy and paste this command into your terminal and hit enter to run tests.
 
     java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BoardTest
 
