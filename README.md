@@ -48,17 +48,17 @@ The folder contains 4 files:
 - hamcrest-core-1.3.jar
 - junit-4.12.jar
 
-    1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship
+1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship
 
-    2. Locate your position into "Testfile" folder in your command terminal.
+2. Locate your position into "Testfile" folder in your command terminal.
 
-    3. Copy and paste this command into your terminal and hit enter to compile.
+3. Copy and paste this command into your terminal and hit enter to compile.
 
-    javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *.java
+   javac -cp .:junit-4.12.jar:hamcrest-core-1.3.jar *.java
 
-    4. Copy and paste this command into your terminal and hit enter to run tests.
+4. Copy and paste this command into your terminal and hit enter to run tests.
 
-    java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BoardTest
+   java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BoardTest
     
 ## Addtional resoures
 - Here's a sample Battleship board.
