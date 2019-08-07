@@ -13,6 +13,11 @@ Text-version and GUI-version are compressed as "Demo3.zip" in this git.
 
 
 
+## Technologies:
+- Java 8 or 9
+- JUnit 4
+- Eclipse IDE (version 4.12 was used for this project)
+
 ## How to start text-version:
     
     1. Download the file "Demo3.zip" in https://github.com/joseenricofrancisco/team-8-battleship
