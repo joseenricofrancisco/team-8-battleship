@@ -40,8 +40,9 @@ Text-version and GUI-version are compressed as "Demo3.zip" in this git.
 
 ## How to run JUnit test:
 
-In "Source" folder, there is a folder named "Testfile". From there access te file "BoardJUnit".
+#### Board JUnit test
 
+In "Source" folder, there is a folder named "Testfile". From there access te file "BoardJUnit".
 
 The folder contains 4 files:
 - BoardTest.java
@@ -60,6 +61,10 @@ The folder contains 4 files:
 4. Copy and paste this command into your terminal and hit enter to run tests.
 
    java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BoardTest
+   
+***
+#### Ship JUnit test
+To run the JUnit test (in Eclipse) for the Ship class, please follow https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/ShipJUnit for detailed instructions.
     
 ## Addtional resoures
 - Here's a sample Battleship board.
