@@ -12,16 +12,15 @@ import battleship.ship.ShipFactory;
  */
 public class InteractController extends Controller{
 	private static InteractController instance = new InteractController();
-	
 	public Integer numberOfShips;
-	
 	private ShipFactory shipFactory = ShipFactory.getFactory();
-	
 	private Map<Integer[],Ship> ships = new HashMap<>();
-	
 	private GameoverController gameoverController = new GameoverController();
 	
-	// This method is used to put the ships on the game board, which is based on the ship's location and size.
+	/**
+	 * Constructor for the class. Puts the ships on the game board based on the ship's location
+	 * and size.
+	 */
 	private InteractController(){
 		Integer numberOfShips = Configuration.NUMBEROFSHIPS;
 		for(Ship ship : shipFactory.getShipsByNumber(numberOfShips)) {
@@ -33,14 +32,25 @@ public class InteractController extends Controller{
 		}
 	}
 	
+	/**
+	 * Used to get the instance in the interactControllerInstance Class
+	 * @return instance
+	 */
 	public static InteractController getInteractControllerInstance() {
 		return instance;
 	}
-	// This method is used to put ships on the GUI buttons.
+		/**
+	 * This method is used to put ships on the GUI buttons.
+	 * @return ships
+	 */
 	public Map<Integer[], Ship> getShips() {
 		return ships;
 	}
 
+	/**
+	 * Get the gameoverController
+	 * @return gameoverController
+	 */
 	public GameoverController getGameoverController() {
 		return gameoverController;
 	}
