@@ -40,7 +40,7 @@ Text-version and GUI-version are compressed as "Demo3.zip" in this git.
 
 ## How to run JUnit test:
 
-In "Source" folder, there is a folder named "Testfile"
+In "Source" folder, there is a folder named "Testfile". From there access te file "BoardJUnit".
 
 
 The folder contains 4 files:
@@ -49,7 +49,7 @@ The folder contains 4 files:
 - hamcrest-core-1.3.jar
 - junit-4.12.jar
 
-1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship
+1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/BoardJUnit
 
 2. Locate your position into "Testfile" folder in your command terminal.
 
