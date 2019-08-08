@@ -12,16 +12,26 @@ public class Configuration {
 	public final static Integer SHIPSIZE = 4;
 	
 	
-	// Get board's width and height.
+	/**
+	 * Gets the the width of the board.
+	 * @return MAPWIDTH the width of the board.
+	 */
 	public static Integer getMapWidth() {
 		return MAPWIDTH;
 	}
-
+	
+	/**
+	 * Gets the height of the board.
+	 * @return MAPHEIGHT the height of the board.
+	 */
 	public static Integer getMapHeight() {
 		return MAPHEIGHT;
 	}
 	
-	// Get the number of ships.
+	/**
+	 * Gets the number ships on the board.
+	 * @return NUMBEROFSHIPS the number of ships.
+	 */
 	public static Integer getNumberOfships() {
 		return NUMBEROFSHIPS;
 	}
