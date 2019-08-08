@@ -49,7 +49,7 @@ The folder contains 4 files:
 - hamcrest-core-1.3.jar
 - junit-4.12.jar
 
-1. Download the files https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/BoardJUnit
+1. Download the files in https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/BoardJUnit
 
 2. Locate your position into "Testfile" folder in your command terminal.
 
