@@ -22,9 +22,15 @@ public class ToolsClassController extends Controller{
 		PARSETOCOORDS = new ParseToCoords();
 	}
 	
-	
+	/**
+	 * Constructor of the ToolsClassController
+	 */
 	private ToolsClassController() {};
-
+	
+	/**
+	 * Used to get the TOOLSCONTROLLER in the ToolsClassController class
+	 * @return TOOLSCONTROLLER
+	 */
 	public static ToolsClassController getFactory() {
 		return TOOLSCONTROLLER;
 	}
