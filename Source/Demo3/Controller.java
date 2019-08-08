@@ -5,5 +5,9 @@ package battleship.controllers;
  *
  */
 public class Controller {
+    /**
+    * Default constructor
+    */
+    public Controller(){}
 
 }
