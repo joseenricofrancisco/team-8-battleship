@@ -5,7 +5,13 @@ package battleship.services;
  *
  */
 public class ParseToCoords {
-
+	/**
+	 * Parse the coordinates of ship's location for GUI. It will create a 2D array to store the ship's 
+	 * coordinates with their direction.
+	 * @param shipLocation the location of the ship
+	 * @param size the size of the ship
+	 * @return coords the coordinations of the ship
+	 */
 	public Integer[][] getCoords(Object[] shipLocation,int size){
 		// Create a 2D array for storing ship's coordinates with direction.
 		Integer[][] coords = new Integer[size][2];
