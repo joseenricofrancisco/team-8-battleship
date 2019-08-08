@@ -1,6 +1,6 @@
 How to run this JUnit Test (in Eclipse):
 
-1. Ensure that the files hamcrest-core-1.3.jar and junit-4.12.jar have been downloaded (both files can be found here in https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/BoardJUnit).
+1. Ensure that the files hamcrest-core-1.3.jar and junit-4.12.jar have been downloaded (both files can be found here in https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/ShipJUnit).
 2. Download the file "Demo2.zip" in https://github.com/joseenricofrancisco/team-8-battleship.
 3. Download the file "ShipJUnit.zip" in the "Source" folder in https://github.com/joseenricofrancisco/team-8-battleship.
 4. Unzip "Demo2.zip". Import all java files in Demo2 into a new project in Eclipse.
