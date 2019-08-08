@@ -28,16 +28,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class GUIStarter extends Application{
-	//
-	public static void main(String[] args) throws ClassNotFoundException {
-		System.out.println("App Started");
-
-		Class.forName("battleship.controllers.ToolsClassController");
-
-		launch(args);
-	}
-
-	// Create the GUI with buttons.
+	/**
+	 * Create the GUI with buttons.
+	 */
 	@Override
 	public void start(Stage stage) throws Exception {
 
@@ -113,6 +106,13 @@ public class GUIStarter extends Application{
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+	//Main function
+	public static void main(String[] args) throws ClassNotFoundException {
+		System.out.println("App Started");
 
+		Class.forName("battleship.controllers.ToolsClassController");
 
+		launch(args);
+	}
 }
