@@ -14,8 +14,11 @@ public class Locations {
 	private static final int DOWN = 1;
 	private static final int RIGHT = 2;
 	private static final int UP = 3;
-	
-	//Judge if ship has a direction.
+
+	/**
+	 * Judge if a ship has a direction.
+	 * @param ship a ship that has already been created through the ship class
+	 */
 	public void setDirectionAndLocationToThis(Ship ship) {
 		if (ship.getDirection()==-1) {
 			calculateDirection(ship, Configuration.getMapWidth(),Configuration.getMapHeight());
@@ -26,7 +29,12 @@ public class Locations {
 		}
 	}
 	
-	//Judge the ship's direction and set ship's direction.
+	/**
+	 * Judge the ship's direction and set ship's direction.
+	 * @param ship a ship that has already been created through the ship class
+	 * @param mapWidth Integer value, along the x axis of the board 
+	 * @param mapHeight Integer value, along the y axis of the board
+	 */
 	private void calculateDirection(Ship ship,Integer mapWidth,Integer mapHeight) {
 
 		Integer finalDirection;
@@ -68,7 +76,11 @@ public class Locations {
 		ship.setDirection(finalDirection);
 	}
 	
-	// Set ship's location depending on ship's direction.
+	/**
+	 * Used to set the ship's coordinates and location on the game board depending on the 
+	 * ship's direction.
+	 * @param ship a ship to be placed on the board
+	 */
 	public void calculateLocation(Ship ship) {
 		Object[] location = new Object[2];
 		
