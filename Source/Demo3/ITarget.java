@@ -6,6 +6,9 @@ package battleship.services;
  */
 @FunctionalInterface
 public interface ITarget {
-
+	/**
+	 * Get the target of the player
+	 * @return Integer[]
+	 */
 	Integer[] getTarget();
 }
