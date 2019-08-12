@@ -1,7 +1,5 @@
 Board JUnit test:
 
-In "Source" folder, there is a folder named "Testfile". From there access te file "BoardJUnit".
-
 The folder contains 4 files:
 - BoardTest.java
 - Board.java
