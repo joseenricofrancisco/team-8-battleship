@@ -4,7 +4,7 @@
 - CPSC233 T02-TEAM8
 - Project Name: **Battleship**
 - Project Description：
-  User loads into the game, which displays 10*10 buttons on the game board. There are two ships which are randomly located on the game board. User and AI randomly press the buttons on the game board one by one, and user will press first at the beginning of this game. If user or AI presses the right buttons which the ships locate on them, the buttons will show an “X”, this means user or AI has already hit the ship for once. If user or AI presses the wrong buttons which there are not ships that locate on them, then the buttons will show an “O”, this means user or AI has not hit the ship. When all ships have been already damaged, the game will be closed. If user has damaged more ships than AI, then user will win, otherwise AI will win. 
+  Adapted from the original game of battleship, out game has similar mechanics but different rules from the original. The user loads into the game, which displays 10*10 buttons on the game board. There are two ships which are randomly located on the game board. The user and AI randomly press the buttons on the game board one by one, the user will go first at the beginning of this game. If the user or AI presses the right buttons which the ships are located, the buttons will show an “X”, this means the user or AI has hit the ship once. If the user or AI presses the wrong buttons where there are no ships located there, then the buttons will show an “O”, this means the user or the AI has not hit the ship. When all ships have been sunk, the game will end. If the user has damaged more ships than AI, then the user will win, otherwise AI will win. 
 
 ***
 There are two version now: text-version and GUI.
