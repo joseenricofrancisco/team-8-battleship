@@ -68,7 +68,7 @@ The folder contains 4 files:
 To run the JUnit test (in Eclipse) for the Ship class, please follow https://github.com/joseenricofrancisco/team-8-battleship/tree/master/Source/Testfile/ShipJUnit for detailed instructions.
     
 ## Addtional resoures
-- Here's a our sample Battleship board.
+- Here's our sample Battleship board.
 - ![enter image description here](https://lh3.googleusercontent.com/pEBTamnuMio1JII_3dQfE61FUOHsGn9I-FRc_f2Q8FZAuEO2VYTgoZSfEEcnVT_bXMqvL2Ro0QU "Battleship Game Board")
 
 
