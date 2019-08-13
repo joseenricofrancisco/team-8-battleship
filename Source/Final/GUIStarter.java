@@ -4,7 +4,7 @@ package battleship.gui;
  * If we or AI press the right button, the button will show an "X", this means we or AI have already hit the ship for once. If we or AI press the wrong button, the button will show an "O", 
  * this means we or AI did not hit the ship. Once we or AI have already damaged all ships, the game will be closed. There are two size 4 ships on the game board for testing, and the ship's
  * health is also 4. The console will tell us who wins this game.
- * @author: Peisong Yang
+ * @author: Peisong Yang, Britney Phan
  */
 
 import java.util.Arrays;
