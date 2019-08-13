@@ -1,0 +1,98 @@
+//This test document is meant to describe the file "ShipTest.java".
+
+Purpose:
+What is the reason for testing the functions of the Ship class?
+	We test the functions of the ship class to ensure that the methods within the class work properly and produce the expected results.
+	We want to to be able to have a class that works flawlessly with the other classes in our application as well as consistently producing any and all expected values needed.
+
+Why do we test this way?
+	We test in this manner for two main reasons. First, we want to make sure that the methods in the class we've coded can be used within other classes.
+	Secondly, constructing a JUnit test is more efficient than manually testing. With just a few clicks, we can run the same necessary tests over and over again to find and fix any bugs in our code, while pinpointing any mistakes through variable values at certain breakpoints.
+	
+Procedure:
+	//Format of each function
+	**<function name>
+		<steps in testing, including input and output>
+		
+		<why the function passes the test>
+
+	**testConstructorShip1
+		We create a new ship of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		
+		assertNotNull takes the ship created to make sure that a new instance has been created.
+		assertEquals takes the getShipHealth getter method and ensures that it returns the expected value of 3.
+		assertEquals takes the getShipSize getter method and ensures that it return the expected value of 3.
+		assertEquals takes the getShipName getter method and ensures it it returns the expected value of "Ship1".
+		
+		We create three variables (xCoord, yCoord and direction) and call the getter methods for each to attach a value to each variable.
+		assertNotNull statements for all three variables ensures that these coordinates and directions do exist.
+		
+		The function passes the test because it succesfully creates an instance of the Ship class and returns all the expected values.
+		
+	**testConstructorShip2
+		We create a new ship of size 8 and name "Ship2" by passing the needed arguments into the constructor.
+		
+		assertNotNull takes the ship created to make sure that a new instance has been created.
+		assertEquals takes the getShipHealth getter method and ensures that it returns the expected value of 8.
+		assertEquals takes the getShipSize getter method and ensures that it return the expected value of 8.
+		assertEquals takes the getShipName getter method and ensures it it returns the expected value of "Ship2".
+		
+		We create three variables (xCoord, yCoord and direction) and call the getter methods for each to attach a value to each variable.
+		assertNotNull statements for all three variables ensures that these coordinates and directions do exist.
+		
+		The function passes the test because it succesfully creates an instance of the Ship class and returns all the expected values.
+		
+	**testGetterSize
+		We create a new instance of the Ship class of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		
+		assertEquals takes the getShipSize getter method and ensures that it returns the expected value of 3.
+		
+		The function passes because the getter method successfully returns the appropriate size of the ship.
+		
+	**testGetterName
+		We create a new instance of the Ship class of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		
+		assertEquals takes the getShipName getter method and ensures that it returns the expected value of "Ship1".
+		
+		The function passes the test because it successfully returns the appropriate name of the ship.
+		
+	**testDamageShip
+		We create a new instance of the Ship class of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		
+		assertEquals takes the getShipHealth getter method and ensures that it returns the expected value of 3.
+		
+		We call the damageShip method, expecting the method to lower the ship's health by 1 point.
+		
+		assertEquals takes the getShipHealth getter method and ensures that it returns the expected value of 2 (down from 3).
+		assertEquals takes the getShipSize getter method and ensures that it returns the expected value of 3 (the size should not change after the ship gets damaged).
+	
+		The function passes the test because it successfully damages the ship, reducing the health by 1 without altering any other variable.
+	
+	**testSetterAndGetterDirection
+		We create a new instance of the Ship class of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		We create a variable called 'direction' and assign the value returned from the getDirection method to it.
+		
+		assertNotNull takes the direction variable to make sure that it exists.
+		
+		We use the setDirection method to change the direction of testShip to 3.
+		assertEquals takes the getDirection getter method and ensures that it returns the expected value of 3.
+		
+		The function passes the test because the getter method successfully returns the appropriate values of the ship's direction, while the stter method alters the direction appropriately.
+		
+	**testSetterAndGetterLocation
+		We create a new instance of the Ship class of size 3 and name "Ship1" by passing the needed arguments into the constructor.
+		
+		assertNotNull takes the getLocation getter method and ensures that it is not null.
+		
+		We create a new variable called oldLocation and use the getLocation method to assign the current location to it.
+		We create a variable called 'direction' and assign the value returned from the getDirection method to it.
+		
+		We write a small if-else statement to change it from the current direction.
+		
+		We use the setDirection method taking the new direction as an argument. This is because the location calculation takes the direction into account. In order to change the location, we must also change it's direction.
+		
+		We create a new instance of object Locations, then use the calculateDirection method from Locations, taking the testShip as an argument, to set a new location. (Note: The setter method setLocation() is found within the calculateDirection method of Locations.)
+		
+		assertNotSame takes the variable oldDirection as well as the getter method getLocation and ensures that the two are not the same location (i.e. the location has changed due to our efforts.)
+		
+		The function passes the test because the getter method successfully return the appropriate values for the locations as well as the calculateLocation method ultimately sets the new location succesfully.
