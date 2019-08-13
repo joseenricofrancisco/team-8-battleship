@@ -1,0 +1,67 @@
+//This test document is meant to describe the file "BoardTest.java".
+
+Purpose:
+What is the reason for testing the functions of the Ship class?
+	We test the functions of the board class to ensure that the methods within the class work properly and produce the expected results.
+	We want to to be able to have a class that works flawlessly with the other classes in our application as well as consistently producing any and all expected values needed.
+	
+Why do we test this way?
+	We test in this manner for two main reasons. First, we want to make sure that the methods in the class we've coded can be used within other classes.
+	Secondly, constructing a JUnit test is more efficient than manually testing. With just a few clicks, we can run the same necessary tests over and over again to find and fix any bugs in our code, while pinpointing any mistakes through variable values at certain breakpoints.
+	
+Procedure:
+	//Format of each function
+	**<function name>
+		<steps in testing, including input and output>
+		
+		<why the function passes the test>
+
+	**testBoard7x7
+		We create a new board of size 6x7 by passing the necessary values into the constructor.
+		
+		assertEquals takes the getMapHeight getter method and ensures that it returns the expected value of 7.
+		assertEquals takes the getMapWidth getter method and ensures that it returns the expected value of 6.
+		
+		The function passes the test because it successfully creates an instant of the Board class and returns all the expected values.
+	
+	**testBoardOver10x10
+		We create a new board, attempting to pass -12 and 22 into the contructor. Since -10 and 22 are both > 10 and/or < 0, the default value of 10 should be used instead.
+		
+		assertEquals takes the getMapHeight getter method and ensures that it returns the expected value of 10.
+		assertEquals takes the getMapWidth getter method and ensures that it returns the expected value of 10.
+		
+		The function passes the test because it successfully creates an instant of the Board class and returns all the expected values, while successfully working around user input errors.
+		
+	**testGetMapWidth
+		We create a new board of size 10x10 by passing the necessary values into the constructor.
+		
+		assertEquals takes the getMapWidth getter method and ensures that it returns the expected value of 10.
+	
+		The function passes the test because the method successfully returns the appropriate values.
+		
+	**testGetMapHeight
+		We create a new board of size 10x10 by passing the necessary values into the constructor.
+		
+		assertEquals takes the getMapHeight getter method and ensures that it returns the expected value of 10.
+	
+		The function passes the test because the method successfully returns the appropriate values.
+		
+	**testSetMapWidth
+		We create a new board of size 10x10 by passing the necessary values into the constructor.
+		
+		assertEquals takes the getMapWidth getter method and ensures that it returns the expected value of 10.
+		
+		We call setMapWidth(4). The map's width should now be 4.
+		assertEquals takes the getMapWidth getter method and ensures that it returns the expected value of 4.
+	
+		The function passes the test because the method successfully returns the appropriate values, as well as sets the width appropriately using the setter method.
+	
+	**testSetMapHeight
+		We create a new board of size 10x10 by passing the necessary values into the constructor.
+		
+		assertEquals takes the getMapHeight getter method and ensures that it returns the expected value of 10.
+		
+		We call setMapHeight(4). The map's Height should now be 4.
+		assertEquals takes the getMapHeight getter method and ensures that it returns the expected value of 4.
+		
+		The function passes the test because the method successfully returns the appropriate values, as well as sets the width appropriately using the setter method.
